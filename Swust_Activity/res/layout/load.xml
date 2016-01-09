@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF" >
+    
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/mainBack"
+        android:gravity="center"
+        android:text="西科学子登录"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+    
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提示：如果学弟学妹第一次登录，请先注册 "
+        android:textColor="#0099CC"
+        android:layout_gravity="center"/>
+    
+    
+    <RelativeLayout 
+  	android:id="@+id/login_div"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:padding="15dp"        
+  	android:layout_margin="15dp" 
+  	android:background="@drawable/background_login_div_bg"
+  	>
+  	<!-- 账号 -->
+  	<TextView 
+  		android:id="@+id/login_user_input"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_alignParentTop="true"
+  		android:layout_marginTop="5dp"
+  		android:text="账号"
+  		/>
+  	<EditText 
+  		android:id="@+id/username_edit"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:hint="请输入教务处学号"
+  		android:layout_below="@id/login_user_input"
+  		android:singleLine="true"
+  		android:inputType="text"/>
+    <!-- 密码 text -->
+    <TextView 
+    	android:id="@+id/login_password_input"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/username_edit"
+    	android:layout_marginTop="3dp"
+    	android:text="密码"
+    	/>
+    <EditText 
+    	android:id="@+id/password_edit"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/login_password_input"
+    	android:hint="请输入教务处密码"
+    	android:password="true"
+    	android:singleLine="true"
+    	android:inputType="textPassword"
+    />
+    <!-- 登录button -->
+    <Button 
+    	android:id="@+id/login_button"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/password_edit"
+    	android:gravity="center"
+    	android:text="登录"
+    	android:background="@color/mainBack"
+    	android:textColor="#ffffff"
+    	android:layout_marginTop="10dp"
+    	android:layout_margin="10dp"
+    />
+    <TextView 
+        android:id="@+id/load_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="快速注册"
+        android:textColor="#0099CC"
+        android:textSize="15dp"
+        android:layout_below="@id/login_button"
+        />
+  </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_centerVertical="true">
+    
+    
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/mainBack"
+        android:id="@+id/my_person">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <com.swust.roundImage.RoundImage
+                android:id="@+id/userimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/head" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"  
+                android:layout_marginLeft="20dp"  
+                android:layout_toRightOf="@id/userimg"    
+                android:text="小朋友"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+             <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/go_logo"/>
+         </RelativeLayout>
+         
+     </LinearLayout>
+     
+    
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="2"
+         android:orientation="vertical"
+         android:background="#F7F5E9">
+        <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+        
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_share_delicious"
+            android:background="@drawable/selector"
+             >
+
+            <ImageView
+                android:id="@+id/my_delicious_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/share" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/my_plan_text"
+                android:layout_toRightOf="@id/my_delicious_img"
+                android:text="我分享的美食"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            
+            <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/go_logo"/>
+         </RelativeLayout>
+
+         <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+        
+         
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/i_like_delicious"
+            android:background="@drawable/selector" >
+
+            <ImageView
+                android:id="@+id/school_delicious_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/myselflike" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/school_delicious_img"
+                android:id="@+id/school_plan_text"
+                android:text="我喜欢的美食"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            
+            <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/go_logo"/>
+         </RelativeLayout>
+         
+         <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_idea"
+            android:background="@drawable/selector" >
+
+            <ImageView
+                android:id="@+id/idea_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/advice" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/idea_img"
+                android:id="@+id/idea_text"
+                android:text="意见反馈"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            
+            <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/go_logo"/>
+         </RelativeLayout>
+         
+        <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_logout" 
+            android:background="@drawable/selector">
+
+            <ImageView
+                android:id="@+id/logout_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logout" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/logout_img"
+                android:id="@+id/logout_text"
+                android:text="退出登录"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            
+            <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/go_logo"/>
+         </RelativeLayout>
+         <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+      </LinearLayout>
+        
+</LinearLayout>

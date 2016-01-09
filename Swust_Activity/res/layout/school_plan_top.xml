@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/mainBack"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border" 
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        
+           <TextView
+            android:id="@+id/ac_top_delicious"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:text="校园美食"
+            android:padding="5dp"
+            android:textColor="@color/mainBack"
+            android:textSize="15dp"
+            />
+       
+        
+
+        
+            <TextView
+            android:id="@+id/ac_top_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:background="@drawable/border"
+            android:text="校园活动"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            
+            />
+      
+        
+
+    </LinearLayout>
+
+</LinearLayout>

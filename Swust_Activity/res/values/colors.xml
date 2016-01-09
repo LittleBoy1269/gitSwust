@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainBack">#CC0033</color>
+    <color name="line">#FFC0C0C0</color>
+    <color name="notepadBack">#EFD8AF</color>
+    <color name="note_item_left">#EEE7DD</color>
+    <color name="note_item_rightup">#FDFDF5</color>
+    <color name="note_item_rightdown">#F7F5E9</color>
+    <color name="note_word">#624439</color>
+    <color name="note_line">#EEEBE2</color>
+    <color name="button_color">#f7f5e9</color>
+    <color name="button_change">#E4E4E4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="bottom_text">#F7F5E9</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="bottom_text_color">#c6c5c0</color>
+</resources>

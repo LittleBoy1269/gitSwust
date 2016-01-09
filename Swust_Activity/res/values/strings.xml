@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">西科美食beta</string>
+    <string name="action_settings">Settings</string>    
+    <string name="BackText">取消</string>
+	<string name="plan">我的计划</string>
+	<string name="edit">编辑</string>
+	<string name="check">查看</string>
+
+</resources>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFCC"
+    android:id="@+id/sildingFinishLayout" >
+    
+    <TextView 
+        android:id="@+id/person_res_title"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:background="#99CC99"
+        android:text="个人信息"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff" />
+
+    <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/line" /> 
+        
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="#FFFFCC"
+        >
+        
+         <TextView
+                android:id="@+id/person_res_imgtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"  
+                android:layout_marginLeft="20dp"  
+                android:text="头像"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+        <com.swust.roundImage.RoundImage
+            android:id="@+id/person_res_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/head" />
+           
+    </RelativeLayout>
+    
+    <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/line" /> 
+        
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#FFFFCC"
+        >
+        
+         <TextView
+                android:id="@+id/person_res_nametext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"  
+                android:layout_marginLeft="20dp"  
+                android:text="用户名"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/person_res_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="小朋友"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+           
+    </RelativeLayout>
+    
+    <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/line" /> 
+        
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#FFFFCC"
+        >
+        
+         <TextView
+                android:id="@+id/person_res_idtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"  
+                android:layout_marginLeft="20dp"  
+                android:text="账号"
+                android:textColor="#000000"
+                android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/person_res_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="20131269"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+           
+    </RelativeLayout>
+    <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/line" /> 
+</LinearLayout>
+

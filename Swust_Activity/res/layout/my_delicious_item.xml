@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/selector"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/delicious_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/school_delicious_img"
+            android:layout_width="80dp"
+            android:layout_height="140dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/delicious" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/delicious_img"
+        android:orientation="vertical"
+        android:paddingLeft="10dp" >
+
+        <TextView
+            android:id="@+id/de_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="标题"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/de_keyword_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/de_title_text"
+            android:paddingTop="2dp"
+            android:text="关键字"
+            android:textColor="#624439"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/de_average_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/de_keyword_text"
+            android:paddingTop="2dp"
+            android:text="人均"
+            android:textColor="#624439"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/de_place_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/de_average_text"
+            android:paddingTop="2dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:text="地点"
+            android:textColor="#624439"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" >
+    </LinearLayout>
+
+    
+
+</RelativeLayout>

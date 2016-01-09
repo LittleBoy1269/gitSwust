@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:layout_centerVertical="true">
+    
+    
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/mainBack"
+        android:id="@+id/my_person">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <com.swust.roundImage.RoundImage
+                android:id="@+id/no_userimg"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/head" />
+
+            <TextView
+                android:id="@+id/load_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"  
+                android:layout_marginLeft="5dp"
+                android:layout_margin="5dp"
+                android:padding="5dp"  
+                android:layout_toRightOf="@id/no_userimg"    
+                android:text="立即登录"
+                android:textColor="#ffffff"
+                android:background="@drawable/border"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/register_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"  
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/load_text"    
+                android:text="立即注册"
+                android:textColor="#ffffff"
+                android:background="@drawable/border"
+                android:textSize="15sp" />
+         </RelativeLayout>
+         
+     </LinearLayout>
+     
+    
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="0dp"
+         android:layout_weight="2"
+         android:orientation="vertical"
+         android:background="#F7F5E9"
+         android:id="@+id/notload_layout">
+        <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+        
+         <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_my_delicious"
+            android:background="@drawable/selector"
+             >
+
+            <ImageView
+                android:id="@+id/no_my_delicious_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/my_plan" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/no_my_plan_text"
+                android:layout_toRightOf="@id/no_my_delicious_img"
+                android:text="我分享的美食"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            
+            <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/go_logo"/>
+         </RelativeLayout>
+
+         <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+        
+         
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_ilike_activity"
+            android:background="@drawable/selector" >
+
+            <ImageView
+                android:id="@+id/no_school_delicious_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/sch_plan" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/no_school_delicious_img"
+                android:id="@+id/no_school_delicious_text"
+                android:text="我喜欢的美食"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            
+            <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/go_logo"/>
+         </RelativeLayout>
+         
+         <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_my_idea"
+            android:background="@drawable/selector" >
+
+            <ImageView
+                android:id="@+id/no_idea_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/idea_img" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/no_idea_img"
+                android:id="@+id/idea_text"
+                android:text="意见反馈"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            
+            <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/go_logo"/>
+         </RelativeLayout>
+         
+        <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/no_my_logout" 
+            android:background="@drawable/selector">
+
+            <ImageView
+                android:id="@+id/no_logout_img"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logout_img" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/no_logout_img"
+                android:id="@+id/no_logout_text"
+                android:text="退出登录"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+            
+            <ImageView 
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/go_logo"/>
+         </RelativeLayout>
+         <View  
+        android:layout_width="fill_parent"  
+        android:layout_height="1dip"  
+        android:background="@color/note_line" /> 
+      </LinearLayout>
+        
+</LinearLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:orientation="horizontal" 
+    android:background="@color/note_item_rightdown"
+    android:id="@+id/judge_button">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="#C0C0C0"
+        android:padding="5dp"
+        android:id="@+id/button_like" >
+
+        <TextView
+            android:id="@+id/like_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="37dp"
+            android:singleLine="true"
+            android:text="喜欢"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/like_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@id/like_text"
+            android:src="@drawable/like_normal" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_weight="1"
+        android:layout_height="45dp"
+        android:layout_width="0dp"
+        android:padding="5dp"
+        android:layout_margin="5dp"
+        android:background="#C0C0C0"
+        android:id="@+id/button_dislike"
+        >
+
+        <TextView
+            android:id="@+id/dislike_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="37dp"
+            android:singleLine="true"
+            android:text="坑爹"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/dislike_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/dislike_text"
+            android:src="@drawable/dislike_normal" />
+
+    </RelativeLayout>
+    
+</LinearLayout>
